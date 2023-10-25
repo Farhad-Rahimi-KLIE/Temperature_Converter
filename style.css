@@ -1,125 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@400;600&display=swap');
 
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Noto Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-}
+        nav {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 900;
+            display: flex;
+            font-size: 20px;
+            background-color: rgb(224, 209, 245);
+            padding: 23px;
+        }
 
+        nav li a {
+            text-decoration: none;
+            color: rgb(2, 3, 18);
+            transition: all;
+            transition-duration: 500ms;
+        }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    color: white;
-    padding: 19px 12px;
-}
+        nav li a:hover {
+            text-decoration: none;
+            color: rgb(103, 101, 235);
+        }
 
+        div.logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 23px;
+            font-size: 24px;
+        }
 
-ul {
-    display: flex;
-}
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
 
+        nav ul {
+            display: flex;
+        }
 
-ul li {
-    list-style: none;
-    padding: 0 13px;
-}
+        .container {
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            max-width: 80vw;
+            margin: auto;
+        }
 
+        .container h1,
+        h2 {
+            margin: 23px 0;
+        }
 
-ul li a{
-    color: white;
-    text-decoration: none;
-}
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
 
+        .container form label {
+            font-size: 25px;
+        }
 
-ul >li> a:hover{
-    color: rgb(192, 189, 205);
-}
+        .container form input[type='number'],
+        select,
+        label {
+            font-size: 25px;
+            width: 23vw;
+            margin-bottom: 23px;
+        }
 
+        .btn {
+            width: 144px;
+            padding: 5px 8px;
+            font-size: 20px;
+            background: #e0d0f5;
+            color: black;
+            border-radius: 13px;
+            cursor: pointer;
+        }
 
-main{
-    min-height: 100vh;
-}
+        .output {
+            display: none;
+        }
 
+        .output table {
+            width: 50vw;
+            text-align: center;
+            border: 2px solid black;
+            font-size: 20px;
+        }
 
-.logo img{
-    width: 15px;
-    filter: invert(1);
-}
+        .output table th{
+            padding: 3px;
+        }
 
+        @media (max-width: 600px) {
+            
 
-.container{
-    max-width: 80vw;
-    margin: auto;
-    padding: 9px 15px;
-}
+            nav {
+                flex-direction: column;
+                font-size: 14px;
+            }
 
+            nav ul li {
+                margin: 5px 13px;
+            }
 
-.container h1{
-    padding: 12px 0;
-}
+            nav ul {
+                justify-content: center;
+            }
 
+            .container {
+                max-width: 95vw;
+            }
 
-input[type='text']{
-    min-width: 23vw;
-    padding: 3px 12px;
-    border: 2px solid black;
-    border-radius: 4px;
-    font-size: 20px;
-}
+            .container form input[type='number'],
+            select,
+            label {
+                width: 80vw;
+            }
+        }
 
-
-.btn{
-    background: black;
-    color: white;
-    padding: 9px 12px;
-    border: 1px solid gray;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-#resultCont div::first-letter{
-    text-transform: uppercase;
-}
-
-
-footer{
-    font-size: 12px;
-    background-color: black;
-    color: white;
-    display: flex;
-    padding: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media only screen and (max-width: 600px) 
-
-    .container{
-        font-size: 12px;
-    }
-
-    input[type='text'] {
-        width: 100%;
-    }
-
-    nav{
-        flex-direction: column;
-    }
-    .logo{
-        padding: 6px 0;
-        font-size: 12px;
-    }
-    .logo span{
-        font-size: 20px;
-    }
-    .logo img{
-        width: 15px;
-        filter: invert(1);
-    }
-  }
+        footer {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+    </style>

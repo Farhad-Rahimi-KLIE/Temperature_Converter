@@ -2,55 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
-          integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
-
+    <title>User Feedback</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-
-<header>
-    <div class="logo">
-        <a href="#">FarhadRahimiKLIE</a>
-    </div>
-    <div class="menu">
-        <i class="fa-sharp fa-solid fa-bars"></i>
-        <div class="navbar nav-first">
-            <div class="navbar nav-second">
-                <div class="navbar navbar-list">
-                    <i class="fa-solid fa-square-xmark"></i>
-
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="" target="_blank">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
+<section class="feedback-section">
+    <h2>How satisfied are you <br> with our services?</h2>
+    <div class="rating">
+        <div class="child unhappy">
+            <p>🥲</p>
+            <h3>Unhappy</h3>
+        </div>
+        <div class="child happy ">
+            <p>😊</p>
+            <h3>Happy</h3>
+        </div>
+        <div class="child satisfied">
+            <p>😁</p>
+            <h3>Satisfied</h3>
         </div>
     </div>
-</header>
+
+    <div class="feedback-btn">
+        <button id="btn" type="button">Send Review</button>
+    </div>
+</section>
 
 <script src="index.js"></script>
 </body>

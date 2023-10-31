@@ -1,111 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lexend Deca Light";
-    overflow-x: hidden;
+    font-family: "Poppins", serif;
 }
 
 html{
     font-size: 62.5%;
-    overflow-x: hidden;
 }
 
 body{
-    overflow-x: hidden;
-}
-
-header{
-    height: 10rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-p,a,li{
-    font-size: 1.7rem;
-    color: #20262E;
-}
-
-a{
-    text-decoration: none;
-}
-
-.fa-bars{
-    font-size: 3.2rem;
-}
-
-.navbar{
     height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(100%);
-    transition: all .5s linear;
+    display: grid;
+    place-items: center;
 }
 
-.nav-first{
-    background-color: #655DBB;
-    width: 50%;
-    min-width: 32rem;
-    max-width: 52rem;
-}
-
-.nav-second{
-    background-color: #3E54AC;
-    width: 95%;
-}
-
-.navbar-list{
-    background-color: #ECF2FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 90%;
-}
-
-.fa-square-xmark{
-    position: fixed;
-    top: 5%;
-    right: 15%;
-    font-size: 3.2rem;
-}
-
-.navbar-list ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
+h2{
+    font-size: 2.4rem;
+    font-family: "Lexend Deca Light", serif;
     text-align: center;
 }
 
-.navbar-list a {
-    font-size: 2.4rem;
-    text-transform: uppercase;
+p,a{
+    font-size: 1.7rem;
 }
 
-.navbar-list li a:hover {
-    color: #3E54AC;
-    text-decoration: underline;
+.feedback-section{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 3.2rem;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.2rem;
+    margin: 4.8rem 0 3.2rem 0;
+}
+
+/*.child p:first-child{}*/
+
+/*.unhappy p, .happy p, .satisfied p{}*/
+:is(.unhappy, .happy, .satisfied) h3{
+    text-align: center;
+}
+
+:is(.unhappy, .happy, .satisfied, .response-screen) p:first-child{
+    background-color: #fff1c9;
+    border-radius: 1rem;
+    font-size: 5.6rem;
+    padding: 1.6rem 2.4rem;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+    transition: all .3s linear;
+}
+
+
+:is(.unhappy, .happy, .satisfied) p:first-child:hover{
+    scale: 1.05;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.feedback-btn{
+    width: 100%;
+    text-align: center;
+}
+
+button, a{
+    padding: 1.2rem 3.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #20262E;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    /*display: inline-block;*/
+    font-family: "Lexend Deca Light", serif;
 }
 
 .active{
-    transform: translateX(0);
+    scale: 1.05;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
+    border-radius: .6rem;
+}
+.response-screen {
+    text-align: center;
 }
 
+.response-screen h3{
+    margin: 1.2rem 0 3.2rem 0;
+    font-size: 1.4rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.response-screen .feedback-button{
+    margin-top: 3.2rem;
+}
 
 
 
